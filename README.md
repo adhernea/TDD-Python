@@ -39,3 +39,10 @@ Si instalas nuevas dependencias habría que hacer
 Es como una pirámide:
 - Cuanto más arriba es más costoso y lento.
 - Cuanto más abajo es más rápido y económico.
+
+### 📚 Testing libraries
+
+- [UnitTest](https://docs.python.org/3/library/unittest.html)
+- [Pytest](https://docs.pytest.org/en/7.1.x/getting-started.html#get-started)
+- [Hypothesis](https://hypothesis.readthedocs.io/en/latest/quickstart.html)
+- [Intro to property-based testing in Python](https://www.freecodecamp.org/news/intro-to-property-based-testing-in-python-6321e0c2f8b/)
