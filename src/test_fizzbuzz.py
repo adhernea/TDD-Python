@@ -17,3 +17,6 @@ def test_when_five_give_buzz():
 
 def test_when_fifteen_give_fizzbuz():
     assert fizz_buzz(15) == "FizzBuzz"
+
+def test_when_22_give_same():
+    assert fizz_buzz(22) == 22
