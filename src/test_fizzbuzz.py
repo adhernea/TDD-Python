@@ -15,6 +15,6 @@ def when_three_give_fizz():
 def when_five_give_buzz():
     assert fizz_buzz(5) == "Buzz"
 
-def test_fizz_buzz_fifteen():
+def when_fifteen_give_fizzbuz():
     assert fizz_buzz(15) == "FizzBuzz"
 
