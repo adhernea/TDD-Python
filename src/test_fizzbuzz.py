@@ -20,3 +20,6 @@ def test_when_fifteen_give_fizzbuz():
 
 def test_when_22_give_same():
     assert fizz_buzz(22) == 22
+
+def test_fizz_buzz_string():
+    assert fizz_buzz("Hello") == ""
