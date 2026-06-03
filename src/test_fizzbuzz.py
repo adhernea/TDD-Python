@@ -3,18 +3,17 @@ import pytest
 from main import fizz_buzz
 
 
-def when_zero_give_empty_string():
+def test_when_zero_give_empty_string():
     assert fizz_buzz(0) == ""
 
-def when_one_give_empty_string():
+def test_when_one_give_empty_string():
     assert fizz_buzz(1) == ""
 
-def when_three_give_fizz():
+def test_when_three_give_fizz():
     assert fizz_buzz(3) == "Fizz"
 
-def when_five_give_buzz():
+def test_when_five_give_buzz():
     assert fizz_buzz(5) == "Buzz"
 
-def when_fifteen_give_fizzbuz():
+def test_when_fifteen_give_fizzbuz():
     assert fizz_buzz(15) == "FizzBuzz"
-
