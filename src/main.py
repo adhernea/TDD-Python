@@ -1,7 +1,7 @@
 print('Hello world!')
 
 def fizz_buzz(number: int):
-    if number == 0:
+    if number == 0 or number == 1:
         return ""
     
     if number%3 == 0 and number%5 == 0:
@@ -11,5 +11,5 @@ def fizz_buzz(number: int):
     elif number%5 == 0:
         return "Buzz"
     
-    return ""
+    return number
     
