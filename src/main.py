@@ -1,7 +1,7 @@
 print('Hello world!')
 
 def fizz_buzz(number: int):
-    if number == 0 or number == 1:
+    if not isinstance(number, int) or number == 0 or number == 1:
         return ""
     
     if number%3 == 0 and number%5 == 0:
