@@ -17,3 +17,10 @@ def fizz_buzz(number: int):
         return "Buzz"
     
     return number
+
+
+"""
+    Esta función recoge una cadena de texto de números enlazados con comas y devuelve la suma resultante de los mismos.
+"""
+def sum_comma_collection():
+    pass
