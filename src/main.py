@@ -23,6 +23,10 @@ def fizz_buzz(number: int):
     Esta función recoge una cadena de texto de números enlazados con comas y devuelve la suma resultante de los mismos.
 """
 def sum_comma_collection(text: str):
+
+    if isinstance(text, int):
+        return text
+
     numbers_str: [str] = text.split(',')
 
     total_sum = 0
