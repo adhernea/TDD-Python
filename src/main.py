@@ -40,3 +40,14 @@ def sum_comma_collection(text: str):
             return 0
     
     return total_sum
+
+"""
+    Esta función recoge una cadena de texto de números enlazados con un delimitador y devuelve la suma resultante de los mismos.
+    El delimitador se indica al inicio de la cadena de texto con // y luego la cadena de números tras una barra.
+    Por ejemplo:
+        //,/1,2,3     -> 6
+        //::/1::1::1  -> 3
+        //;/3;4;5     -> 12
+"""
+def sum_delimiter_collection(text: str):
+    pass
