@@ -20,9 +20,16 @@ def fizz_buzz(number: int):
 
 
 """
-    Esta función recoge una cadena de texto de números enlazados con comas y devuelve la suma resultante de los mismos.
+    Ejercicio 1. Esta función recoge una cadena de texto de números enlazados con comas y devuelve la suma resultante de los mismos.
+    
+    Ejercicio 2. Esta función recoge una cadena de texto de números enlazados con un delimitador y devuelve la suma resultante de los mismos.
+    El delimitador se indica al inicio de la cadena de texto con // y luego la cadena de números tras una barra.
+    Por ejemplo:
+        //,/1,2,3     -> 6
+        //::/1::1::1  -> 3
+        //;/3;4;5     -> 12
 """
-def sum_comma_collection(text: str):
+def sum_delimiter_collection(text: str):
 
     if isinstance(text, int):
         return text
@@ -41,13 +48,3 @@ def sum_comma_collection(text: str):
     
     return total_sum
 
-"""
-    Esta función recoge una cadena de texto de números enlazados con un delimitador y devuelve la suma resultante de los mismos.
-    El delimitador se indica al inicio de la cadena de texto con // y luego la cadena de números tras una barra.
-    Por ejemplo:
-        //,/1,2,3     -> 6
-        //::/1::1::1  -> 3
-        //;/3;4;5     -> 12
-"""
-def sum_delimiter_collection(text: str):
-    pass
