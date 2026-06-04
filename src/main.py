@@ -28,6 +28,9 @@ def sum_comma_collection(text: str):
     total_sum = 0
 
     for numbstring in numbers_str:
-        total_sum += int(numbstring)
+        try:
+            total_sum += int(numbstring)
+        except:
+            return 0
     
     return total_sum
