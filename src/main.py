@@ -26,6 +26,8 @@ def sum_comma_collection(text: str):
 
     if isinstance(text, int):
         return text
+    elif isinstance(text, list):
+        return -1
 
     numbers_str: [str] = text.split(',')
 
