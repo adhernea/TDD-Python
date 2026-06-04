@@ -40,6 +40,21 @@ Es como una pirámide:
 - Cuanto más arriba es más costoso y lento.
 - Cuanto más abajo es más rápido y económico.
 
+### Testeo con dependencias de otros componentes de arquitectura
+Cuando tenemos funciones que requieran de conexiones a bases de datos o APIs es necesario utilizar Mocks.
+Los mocks son datos de prueba de mentira (en ficheros, memoria, etc.) para poner testear casos de uso específicos. Se utilizan sobre todo cuando hay inyección de dependencias.
+> "Cuando algo puede ser inyectado, puede ser mockeado".
+
+Dando un pequeño repaso a los principios SOLID:
+  - Single responsibility
+  - Open close
+  - Liskov substitution
+  - Interface segregation
+  - Dependency inversion
+
+Cuando se hace un mock de una clase, por ejemplo, UserRepository, es necesario tener una interfaz para crear otro objeto que implemente los método que devuelven los datos de prueba.
+
+
 ### 📚 Testing libraries
 
 - [UnitTest](https://docs.python.org/3/library/unittest.html)
