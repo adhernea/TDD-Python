@@ -25,9 +25,9 @@ def fizz_buzz(number: int):
     Ejercicio 2. Esta función recoge una cadena de texto de números enlazados con un delimitador y devuelve la suma resultante de los mismos.
     El delimitador se indica al inicio de la cadena de texto con // y luego la cadena de números tras una barra.
     Por ejemplo:
-        //,/1,2,3     -> 6
-        //::/1::1::1  -> 3
-        //;/3;4;5     -> 12
+        //,\n1,2,3     -> 6
+        //;\n3;4;5     -> 12
+        //::\n1::1::1  -> 3
 """
 def sum_delimiter_collection(text: str):
 
