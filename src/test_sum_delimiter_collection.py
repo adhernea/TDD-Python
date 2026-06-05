@@ -3,7 +3,7 @@ from main import sum_delimiter_collection
 # Test para delimitador ; y un solo número
 # ("//;\n1") -> 1
 def test_when_delimiter_onenumber_give_thatnumber():
-    assert sum_delimiter_collection("//;/1") == 1
+    assert sum_delimiter_collection("//;\n1") == 1
 
 # Test para delimitador , y varios números
 # ("//,\n1,2,3") -> 6
