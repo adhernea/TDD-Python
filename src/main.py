@@ -28,6 +28,8 @@ def fizz_buzz(number: int):
         //,\n1,2,3     -> 6
         //;\n3;4;5     -> 12
         //::\n1::1::1  -> 3
+    
+    Si no recibe delimitador, debería ejecutarse como en el ejercicio 1.
 """
 def sum_delimiter_collection(text: str):
 
@@ -36,9 +38,17 @@ def sum_delimiter_collection(text: str):
     elif isinstance(text, list):
         return -1
 
-    numbers_str: [str] = text.split(',')
+    numbers_str: [str] = []
 
-    total_sum = 0
+    if (text.startswith("//")):
+        parts = text.split("\n")
+        delimiter = parts[0].replace("//","")
+        numbers_str = parts[1].split(delimiter)
+    else:
+        delimiter = ","
+        numbers_str = text.split(",")
+
+    total_sum: int = 0
 
     for numbstring in numbers_str:
         try:
